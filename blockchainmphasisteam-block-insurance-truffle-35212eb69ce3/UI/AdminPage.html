@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page </title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/MainLogin.css">
+    
+    
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  -->
+<script src="assets/jquery-3.2.1.min.js"></script>
+
+</head>
+
+<body id="main_body">
+  
+    <div id="headerDiv"></div>
+   
+     <div class="imagebanner">
+  <img src="assets/img/lpv.jpg" alt="Notebook" style="width:100%;">
+  <div class="content">
+    <h1 id="custInfo">Welcome To Block Insurance.</h1>
+    <p>Insurance Solutions implemented on blockchain.</p>
+  </div>
+</div>
+   
+ 
+    
+  
+  
+    <div class="container-fluid" id="main_container" >
+        <div class="row">
+        
+        
+         
+            
+   <div class="col-lg-6 col-md-12 card" id="apply_loan_column" style="margin-top:90px;margin-left:390px;width:450px;">
+         <div class="titleLanding" style="margin-top:20px;" >Log In As Admin</div>
+  
+     <br>
+     <br>
+     <label id="inc" style="color:red;">Incorrect Password*</label>
+<input type="password" class="form-control" id="adminPassword" name="adminPassword" placeholder="Enter Admin Password"  style="border:1px solid #ccc;border-radius:4px;box-sizing:border-box;" required>
+<br>
+            
+
+     
+           <button id="button1" class="button" style="width:90%;margin-bottom:10px;">Log In</button>
+         
+          
+          
+        
+ 
+    
+              
+              
+                </div>
+            
+             
+            
+    </div>
+    </div>
+  
+     
+    
+   
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+  <script>
+$(document).ready(function(){
+	 setTimeout(function(){ 
+		 $("#headerDiv").load("Header.html");
+	 }, 200);
+	 $("#inc").hide();
+	 
+	
+$("#button1").click(function(){
+	
+	var adminPass=$("#adminPassword").val();
+	//alert(adminPass);
+    if(adminPass=="admin"){
+    //	alert("correct");
+   
+    window.location.href="AdminHome.html";
+    	// $("#inc").hide();
+    }
+    else{
+    	 $("#inc").show();
+    }
+}); 
+
+
+});
+
+
+
+
+        
+
+
+</script>
+
+
+
+
+
+</html>

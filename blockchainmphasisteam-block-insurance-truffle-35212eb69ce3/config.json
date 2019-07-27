@@ -1,0 +1,11 @@
+{
+	"appPort":"5051",
+	"insuranceWalletAddress":"0xb0180044bac78afae027c017d6d250e3f2c73f12",
+	"insuranceWalletPassword":"",
+	"bankWalletAddress":"0x4802c1b6ab728e28d462005481d2472e523d886d",
+	"ipfsAPI":"/ip4/127.0.0.1/tcp/5001",
+	"web3Provider":"http://localhost:23002",
+	"ipfsIpAddress":"127.0.0.1",
+	"ipfsPort":"8080"
+
+}
